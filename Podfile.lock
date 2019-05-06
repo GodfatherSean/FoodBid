@@ -1,0 +1,134 @@
+PODS:
+  - BoringSSL-GRPC (0.0.2):
+    - BoringSSL-GRPC/Implementation (= 0.0.2)
+    - BoringSSL-GRPC/Interface (= 0.0.2)
+  - BoringSSL-GRPC/Implementation (0.0.2):
+    - BoringSSL-GRPC/Interface (= 0.0.2)
+  - BoringSSL-GRPC/Interface (0.0.2)
+  - FirebaseAuthInterop (1.0.0)
+  - FirebaseCore (5.3.1):
+    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseFirestore (1.0.2):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 5.2)
+    - FirebaseFirestore/abseil-cpp (= 1.0.2)
+    - "gRPC-C++ (= 0.0.6)"
+    - leveldb-library (~> 1.20)
+    - nanopb (~> 0.3.901)
+    - Protobuf (~> 3.1)
+  - FirebaseFirestore/abseil-cpp (1.0.2):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 5.2)
+    - "gRPC-C++ (= 0.0.6)"
+    - leveldb-library (~> 1.20)
+    - nanopb (~> 0.3.901)
+    - Protobuf (~> 3.1)
+  - GoogleUtilities/Environment (5.5.0)
+  - GoogleUtilities/Logger (5.5.0):
+    - GoogleUtilities/Environment
+  - "gRPC-C++ (0.0.6)":
+    - "gRPC-C++/Implementation (= 0.0.6)"
+    - "gRPC-C++/Interface (= 0.0.6)"
+  - "gRPC-C++/Implementation (0.0.6)":
+    - "gRPC-C++/Interface (= 0.0.6)"
+    - gRPC-Core (= 1.17.0)
+    - nanopb (~> 0.3)
+  - "gRPC-C++/Interface (0.0.6)"
+  - gRPC-Core (1.17.0):
+    - gRPC-Core/Implementation (= 1.17.0)
+    - gRPC-Core/Interface (= 1.17.0)
+  - gRPC-Core/Implementation (1.17.0):
+    - BoringSSL-GRPC (= 0.0.2)
+    - gRPC-Core/Interface (= 1.17.0)
+    - nanopb (~> 0.3)
+  - gRPC-Core/Interface (1.17.0)
+  - Just (0.7.1)
+  - leveldb-library (1.20)
+  - Material (2.16.4):
+    - Material/Core (= 2.16.4)
+  - Material/Core (2.16.4):
+    - Motion (~> 1.4.3)
+  - Motion (1.4.3):
+    - Motion/Core (= 1.4.3)
+  - Motion/Core (1.4.3)
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - OAuthSwift (1.3.0)
+  - Onboard (2.3.3)
+  - Protobuf (3.7.0)
+  - RandomKit (5.2.3):
+    - ShiftOperations (~> 1.0.2)
+    - Threadly (~> 1.0)
+  - Realm (3.13.1):
+    - Realm/Headers (= 3.13.1)
+  - Realm/Headers (3.13.1)
+  - ShiftOperations (1.0.2)
+  - SwiftyJSON (4.2.0)
+  - Threadly (1.2.0)
+  - Timepiece (1.3.1)
+
+DEPENDENCIES:
+  - FirebaseCore
+  - FirebaseFirestore
+  - Just
+  - Material
+  - OAuthSwift
+  - Onboard
+  - RandomKit
+  - Realm
+  - SwiftyJSON
+  - Timepiece
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BoringSSL-GRPC
+    - FirebaseAuthInterop
+    - FirebaseCore
+    - FirebaseFirestore
+    - GoogleUtilities
+    - "gRPC-C++"
+    - gRPC-Core
+    - Just
+    - leveldb-library
+    - Material
+    - Motion
+    - nanopb
+    - OAuthSwift
+    - Onboard
+    - Protobuf
+    - RandomKit
+    - Realm
+    - ShiftOperations
+    - SwiftyJSON
+    - Threadly
+    - Timepiece
+
+SPEC CHECKSUMS:
+  BoringSSL-GRPC: 2a230d9cd93e7ce39916044f645cebb31f37dde6
+  FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
+  FirebaseCore: 52f851b30e11360f1e67cf04b1edfebf0a47a2d3
+  FirebaseFirestore: ccdaffb8a73c591ff61872b8f7905ad0c237ef50
+  GoogleUtilities: 6481e6318c5fcabaaa8513ef8120f329055d7c10
+  "gRPC-C++": e76441995900ac90e9bd98644ab4733f12521edf
+  gRPC-Core: 4028031ed2c5267cca0d846c876d8046b1ecb9b6
+  Just: 60c0995e04718eb621a07abef45ce6883c562f2b
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  Material: 4ed78690b09ffd148b5ffab6b4367fb1d8da1cd3
+  Motion: 153ba49692997888556c7a95207278a8b1f8be95
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  OAuthSwift: 7ef2f74cb570e1e30e2aeddc58fccc0f3891d057
+  Onboard: 4d6e943e20bdd6bc229df967a347dd7514bc2a6f
+  Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
+  RandomKit: 380745911c4f7989707489b2ce297194bfcf5031
+  Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
+  ShiftOperations: 702c9aa98d3b20d98dceb71dd8437b562f7ab3ad
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  Threadly: b772ed7c1ff4a3f03eb4600bbc5ef83b3be5cb29
+  Timepiece: c0760ec0e545697d86b80424dcd2b4d5ef66cf51
+
+PODFILE CHECKSUM: 3902e6d952b403990e95d781110ae54d2c133a04
+
+COCOAPODS: 1.6.1
