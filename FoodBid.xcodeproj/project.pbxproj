@@ -23,6 +23,8 @@
 		A3A6F10422811D66001606EC /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6F10322811D66001606EC /* BaseCell.swift */; };
 		A3A6F10622811DB8001606EC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6F10522811DB8001606EC /* User.swift */; };
 		A3A6F10822811E79001606EC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6F10722811E79001606EC /* ProfileViewController.swift */; };
+		A3A6F10C228122C9001606EC /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6F10B228122C9001606EC /* Dish.swift */; };
+		A3A6F10E22812686001606EC /* DishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6F10D22812686001606EC /* DishCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		A3A6F10322811D66001606EC /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 		A3A6F10522811DB8001606EC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A3A6F10722811E79001606EC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A3A6F10B228122C9001606EC /* Dish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		A3A6F10D22812686001606EC /* DishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 		A3A6F0F12280FDC6001606EC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A3A6F10B228122C9001606EC /* Dish.swift */,
 				A3A6F10522811DB8001606EC /* User.swift */,
 				A3A6F0F22280FDEE001606EC /* Restaurant.swift */,
 			);
@@ -119,6 +124,7 @@
 			children = (
 				A3A6F10322811D66001606EC /* BaseCell.swift */,
 				A3A6F0F822810867001606EC /* RestaurantCollectionViewCell.swift */,
+				A3A6F10D22812686001606EC /* DishCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -268,6 +274,7 @@
 			files = (
 				A321691F2280C674003B4B58 /* HomeViewController.swift in Sources */,
 				A3A6F0FB22811032001606EC /* RestaurantViewController.swift in Sources */,
+				A3A6F10C228122C9001606EC /* Dish.swift in Sources */,
 				A3A6F10622811DB8001606EC /* User.swift in Sources */,
 				A3A6F10422811D66001606EC /* BaseCell.swift in Sources */,
 				A3A6F0F922810867001606EC /* RestaurantCollectionViewCell.swift in Sources */,
@@ -276,6 +283,7 @@
 				A3A6F10022811D01001606EC /* UIColor+Extension.swift in Sources */,
 				A321691D2280C674003B4B58 /* AppDelegate.swift in Sources */,
 				A3A6F10222811D01001606EC /* TableKeys.swift in Sources */,
+				A3A6F10E22812686001606EC /* DishCell.swift in Sources */,
 				A3A6F0F32280FDEE001606EC /* Restaurant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
