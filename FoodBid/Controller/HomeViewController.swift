@@ -19,6 +19,18 @@ class HomeViewController: UIViewController {
     override var preferredStatusBarStyle : UIStatusBarStyle {
         return .lightContent
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier {
+            if identifier == "showRestaurantIdentifier" {
+                if let dest = segue.destination as? RestaurantViewController {
+                    if let cell = sender as? RestaurantCollectionViewCell {
+                        dest.restaurant = cell.restaurant
+                    }
+                }
+            }
+        }
+    }
 }
 
 // MARK: - UICollectionViewDataSource

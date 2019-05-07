@@ -3,8 +3,9 @@ import UIKit
 class RestaurantCollectionViewCell: UICollectionViewCell {
     // MARK: - IBOutlets
     @IBOutlet weak var featuredImageView: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
-
+    @IBOutlet weak var ratingLAbel: UILabel!
+    @IBOutlet weak var nameButton: UIButton!
+    
     // MARK: - public API
     var restaurant: Restaurant! {
         didSet {
@@ -31,7 +32,8 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
     }
     
     fileprivate func updateUI() {
-        titleLabel.text = self.restaurant.name
+        nameButton.setTitle(restaurant.name, for: .normal)
+        ratingLAbel.text = "\(self.restaurant.stars)"
         self.loadImage()
     }
     
