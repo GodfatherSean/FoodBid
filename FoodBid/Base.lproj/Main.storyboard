@@ -11,20 +11,37 @@
     </dependencies>
     <scenes>
         <!--My Profile-->
-        <scene sceneID="6I4-ab-Wli">
+        <scene sceneID="QSX-I1-2zm">
             <objects>
-                <viewController id="Vn3-7v-8rP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Duv-aV-Ev6">
+                <navigationController id="S3Q-jY-9O2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Profile" id="oXq-Ac-1fu"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lJp-VA-N9c">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OT1-HF-Jtb" kind="relationship" relationship="rootViewController" id="3H8-Mb-Kz1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFG-c8-Elh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-217" y="656"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="uJp-Bb-VSF">
+            <objects>
+                <viewController id="OT1-HF-Jtb" userLabel="Profile View Controller" customClass="ProfileViewController" customModule="FoodBid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ukf-5t-KUR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="GIX-W1-F7q"/>
+                        <viewLayoutGuide key="safeArea" id="CFh-0i-9uE"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My Profile" id="v9O-uy-DkK"/>
+                    <navigationItem key="navigationItem" id="q80-QQ-3Zl"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ioj-q6-Esh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kbJ-XY-GXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-217" y="621"/>
+            <point key="canvasLocation" x="557" y="656"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6ZA-uf-0Av">
@@ -36,8 +53,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Vn3-7v-8rP" kind="relationship" relationship="viewControllers" id="FIJ-NU-x97"/>
                         <segue destination="oMK-PW-fyd" kind="relationship" relationship="viewControllers" id="g2P-iP-xud"/>
+                        <segue destination="S3Q-jY-9O2" kind="relationship" relationship="viewControllers" id="3f9-iR-zFx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JPQ-oL-MTt" userLabel="First Responder" sceneMemberID="firstResponder"/>

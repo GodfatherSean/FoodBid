@@ -17,6 +17,12 @@
 		A3A6F0F32280FDEE001606EC /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6F0F22280FDEE001606EC /* Restaurant.swift */; };
 		A3A6F0F922810867001606EC /* RestaurantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6F0F822810867001606EC /* RestaurantCollectionViewCell.swift */; };
 		A3A6F0FB22811032001606EC /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6F0FA22811032001606EC /* RestaurantViewController.swift */; };
+		A3A6F10022811D01001606EC /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6F0FD22811D01001606EC /* UIColor+Extension.swift */; };
+		A3A6F10122811D01001606EC /* Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6F0FE22811D01001606EC /* Specs.swift */; };
+		A3A6F10222811D01001606EC /* TableKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6F0FF22811D01001606EC /* TableKeys.swift */; };
+		A3A6F10422811D66001606EC /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6F10322811D66001606EC /* BaseCell.swift */; };
+		A3A6F10622811DB8001606EC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6F10522811DB8001606EC /* User.swift */; };
+		A3A6F10822811E79001606EC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6F10722811E79001606EC /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		A3A6F0F22280FDEE001606EC /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		A3A6F0F822810867001606EC /* RestaurantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCollectionViewCell.swift; sourceTree = "<group>"; };
 		A3A6F0FA22811032001606EC /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		A3A6F0FD22811D01001606EC /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "../../../../../../../../Desktop/Swift-30-Projects/Project 03 - FacebookMe/FacebookMe/UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A3A6F0FE22811D01001606EC /* Specs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Specs.swift; path = "../../../../../../../../Desktop/Swift-30-Projects/Project 03 - FacebookMe/FacebookMe/Specs.swift"; sourceTree = "<group>"; };
+		A3A6F0FF22811D01001606EC /* TableKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableKeys.swift; path = "../../../../../../../../Desktop/Swift-30-Projects/Project 03 - FacebookMe/FacebookMe/TableKeys.swift"; sourceTree = "<group>"; };
+		A3A6F10322811D66001606EC /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		A3A6F10522811DB8001606EC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A3A6F10722811E79001606EC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +81,7 @@
 		A321691B2280C674003B4B58 /* FoodBid */ = {
 			isa = PBXGroup;
 			children = (
+				A3A6F0FC22811CF5001606EC /* Helper */,
 				A3A6F0F522810359001606EC /* View */,
 				A3A6F0F422810294001606EC /* Controller */,
 				A3A6F0F12280FDC6001606EC /* Model */,
@@ -85,6 +98,7 @@
 		A3A6F0F12280FDC6001606EC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A3A6F10522811DB8001606EC /* User.swift */,
 				A3A6F0F22280FDEE001606EC /* Restaurant.swift */,
 			);
 			path = Model;
@@ -95,6 +109,7 @@
 			children = (
 				A321691E2280C674003B4B58 /* HomeViewController.swift */,
 				A3A6F0FA22811032001606EC /* RestaurantViewController.swift */,
+				A3A6F10722811E79001606EC /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -102,9 +117,20 @@
 		A3A6F0F522810359001606EC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A3A6F10322811D66001606EC /* BaseCell.swift */,
 				A3A6F0F822810867001606EC /* RestaurantCollectionViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A3A6F0FC22811CF5001606EC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6F0FE22811D01001606EC /* Specs.swift */,
+				A3A6F0FF22811D01001606EC /* TableKeys.swift */,
+				A3A6F0FD22811D01001606EC /* UIColor+Extension.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		AC7951A17FA43D8E1026D1D3 /* Pods */ = {
@@ -242,8 +268,14 @@
 			files = (
 				A321691F2280C674003B4B58 /* HomeViewController.swift in Sources */,
 				A3A6F0FB22811032001606EC /* RestaurantViewController.swift in Sources */,
+				A3A6F10622811DB8001606EC /* User.swift in Sources */,
+				A3A6F10422811D66001606EC /* BaseCell.swift in Sources */,
 				A3A6F0F922810867001606EC /* RestaurantCollectionViewCell.swift in Sources */,
+				A3A6F10122811D01001606EC /* Specs.swift in Sources */,
+				A3A6F10822811E79001606EC /* ProfileViewController.swift in Sources */,
+				A3A6F10022811D01001606EC /* UIColor+Extension.swift in Sources */,
 				A321691D2280C674003B4B58 /* AppDelegate.swift in Sources */,
+				A3A6F10222811D01001606EC /* TableKeys.swift in Sources */,
 				A3A6F0F32280FDEE001606EC /* Restaurant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
