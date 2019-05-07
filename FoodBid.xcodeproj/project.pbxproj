@@ -3,16 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		561BD1BD21512D1BDCF18CB5 /* Pods_FoodBid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E77126D0FA30EAEB53020DD /* Pods_FoodBid.framework */; };
 		A321691D2280C674003B4B58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A321691C2280C674003B4B58 /* AppDelegate.swift */; };
-		A321691F2280C674003B4B58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A321691E2280C674003B4B58 /* ViewController.swift */; };
+		A321691F2280C674003B4B58 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A321691E2280C674003B4B58 /* HomeViewController.swift */; };
 		A32169222280C674003B4B58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32169202280C674003B4B58 /* Main.storyboard */; };
 		A32169242280C675003B4B58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32169232280C675003B4B58 /* Assets.xcassets */; };
 		A32169272280C675003B4B58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32169252280C675003B4B58 /* LaunchScreen.storyboard */; };
+		A37463A22280F81C000C0A12 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A37463A12280F81C000C0A12 /* GoogleService-Info.plist */; };
+		A3A6F0F32280FDEE001606EC /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6F0F22280FDEE001606EC /* Restaurant.swift */; };
+		A3A6F0F922810867001606EC /* RestaurantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6F0F822810867001606EC /* RestaurantCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +24,14 @@
 		308F9DFFC18A91E2DEC62E15 /* Pods-FoodBid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodBid.debug.xcconfig"; path = "Target Support Files/Pods-FoodBid/Pods-FoodBid.debug.xcconfig"; sourceTree = "<group>"; };
 		A32169192280C674003B4B58 /* FoodBid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodBid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A321691C2280C674003B4B58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A321691E2280C674003B4B58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A321691E2280C674003B4B58 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A32169212280C674003B4B58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A32169232280C675003B4B58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A32169262280C675003B4B58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A32169282280C675003B4B58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A37463A12280F81C000C0A12 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3A6F0F22280FDEE001606EC /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		A3A6F0F822810867001606EC /* RestaurantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +67,11 @@
 		A321691B2280C674003B4B58 /* FoodBid */ = {
 			isa = PBXGroup;
 			children = (
+				A3A6F0F522810359001606EC /* View */,
+				A3A6F0F422810294001606EC /* Controller */,
+				A3A6F0F12280FDC6001606EC /* Model */,
+				A37463A12280F81C000C0A12 /* GoogleService-Info.plist */,
 				A321691C2280C674003B4B58 /* AppDelegate.swift */,
-				A321691E2280C674003B4B58 /* ViewController.swift */,
 				A32169202280C674003B4B58 /* Main.storyboard */,
 				A32169232280C675003B4B58 /* Assets.xcassets */,
 				A32169252280C675003B4B58 /* LaunchScreen.storyboard */,
@@ -71,13 +80,36 @@
 			path = FoodBid;
 			sourceTree = "<group>";
 		};
+		A3A6F0F12280FDC6001606EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6F0F22280FDEE001606EC /* Restaurant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3A6F0F422810294001606EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A321691E2280C674003B4B58 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A3A6F0F522810359001606EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6F0F822810867001606EC /* RestaurantCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		AC7951A17FA43D8E1026D1D3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				308F9DFFC18A91E2DEC62E15 /* Pods-FoodBid.debug.xcconfig */,
 				30148CC2507CF9E56C0C61EB /* Pods-FoodBid.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -150,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A32169272280C675003B4B58 /* LaunchScreen.storyboard in Resources */,
+				A37463A22280F81C000C0A12 /* GoogleService-Info.plist in Resources */,
 				A32169242280C675003B4B58 /* Assets.xcassets in Resources */,
 				A32169222280C674003B4B58 /* Main.storyboard in Resources */,
 			);
@@ -164,50 +197,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FoodBid/Pods-FoodBid-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/Just/Just.framework",
-				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
-				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
-				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Onboard/Onboard.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/RandomKit/RandomKit.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/ShiftOperations/ShiftOperations.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/Threadly/Threadly.framework",
-				"${BUILT_PRODUCTS_DIR}/Timepiece/Timepiece.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-FoodBid/Pods-FoodBid-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Just.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Onboard.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RandomKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ShiftOperations.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Threadly.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Timepiece.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-FoodBid/Pods-FoodBid-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -243,8 +237,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A321691F2280C674003B4B58 /* ViewController.swift in Sources */,
+				A321691F2280C674003B4B58 /* HomeViewController.swift in Sources */,
+				A3A6F0F922810867001606EC /* RestaurantCollectionViewCell.swift in Sources */,
 				A321691D2280C674003B4B58 /* AppDelegate.swift in Sources */,
+				A3A6F0F32280FDEE001606EC /* Restaurant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

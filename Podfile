@@ -12,6 +12,7 @@ target 'FoodBid' do
   # Firebase
   pod 'FirebaseCore'
   pod 'FirebaseFirestore'
+  pod 'Firebase/Core'
   
   # Networking
   pod 'SwiftyJSON'
@@ -22,6 +23,5 @@ target 'FoodBid' do
   pod 'Realm'
   pod 'Onboard'
   pod 'Timepiece'
-  pod 'RandomKit'
 
 end
